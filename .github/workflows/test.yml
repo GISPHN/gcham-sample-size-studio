@@ -1,0 +1,20 @@
+name: Test sample size calculations
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check JavaScript syntax
+        run: |
+          node --check dist/calc.mjs
+          node --check dist/app.mjs
+      - name: Run calculation tests
+        run: node --test tests/*.test.mjs

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap');
+:root{color:#223c3e;background:#f4f7f5;font-size:16px}
+body{font-size:16px;line-height:1.6}
+.brandline,.headbadge,.eyebrow,.vtag,.introfoot,.sectiontitle p,.step,.choicenum,.choicesub,.choicebottom,.methodstripe span,.methodstripe small,.field small,.fieldvalue,.evidence p,.required,.evidence textarea,.resultcaption,.groups,.recruitbox,.detailrow,.charthead small,.cautiontitle,.caution p,.citation span,.citation a,.protocolhead span,.protocol p,.actions button,.notecols p,footer{font-size:clamp(14px,1rem,16px)}
+.brandline,.headbadge,.eyebrow,.vtag,.introfoot{color:#e2f2ea}
+.lead{font-size:17px;color:#edf6f1;line-height:1.75}
+.sectiontitle p,.choicesub,.choicenum,.field small,.evidence p,.resultcaption,.groups,.detailrow,.charthead small,.caution p,.citation span,.protocolhead span,.protocol p,.notecols p{color:#405b5b;font-weight:500}
+.sectiontitle h2{font-weight:700}
+.choicecard{min-height:255px;border-color:#768e86}
+.choicecard.chosen{border-color:#17654e}
+.choicetitle{font-size:18px}
+.choicebottom,.citation a{color:#145a46;font-weight:700}
+.methodstripe span,.methodstripe small,.required{color:#174f40;font-weight:700}
+.methodstripe strong,.fieldtop label,.evidence label{font-size:16px;font-weight:700}
+.fieldvalue{color:#405b5b;font-weight:700}
+.fieldvalue input{min-height:44px;border-color:#768e86;font-size:16px}
+.field input[type=range]{min-height:44px;margin:8px 0 3px}
+.evidence textarea{font-size:16px;color:#223c3e;border-color:#768e86;line-height:1.65}
+.resultheader{font-size:19px}
+.live{font-size:14px;color:#174f40;font-weight:700}
+.recruitbox{color:#174f40;font-weight:700}
+.recruitbox strong{font-size:22px}
+.charthead strong,.cautiontitle,.protocolhead strong{font-size:16px}
+svg text{font-size:12px;fill:#285e55;font-weight:600}
+.cautiontitle{color:#805919}
+.citation a{text-decoration-thickness:2px}
+.protocol p{line-height:1.7;max-height:190px}
+.actions button{min-height:44px;font-weight:700}
+.actions .secondary{border-color:#768e86}
+.step{min-width:38px;width:38px;height:38px;color:#174f40}
+.notecols p{line-height:1.7}
+footer{color:#e2f2ea}
+button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid #104f9e;outline-offset:3px}
+@media(max-width:780px){.choicecard{min-height:250px}.introfoot{font-size:14px}}
+@media(max-width:520px){.choicegrid{grid-template-columns:1fr}.choicecard,.choicecard.chosen{min-height:0;padding:18px}.choicetitle{margin-top:12px}.choicebottom{margin-top:18px}.fieldtop{align-items:flex-start}.fieldtop label{padding-top:8px}.required{display:inline-block;margin:7px 0 0}.protocolhead{align-items:flex-start}}
