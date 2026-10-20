@@ -2,9 +2,19 @@
 
 研究目的から選ぶ、日本語のサンプルサイズ設計アプリ。`dist/index.html` を静的サイトとして配信します。入力した研究情報はブラウザー内で計算され、サーバーへ送信されません。JSON保存は利用者の端末へのダウンロードです。
 
-公開アプリ: https://gcham-sample-size-studio.atcc25922.chatgpt.site
+公開アプリ（GitHub Pages）: https://gisphn.github.io/gcham-sample-size-studio/
 
 文字の大きさと色は[デジタル庁デザインシステム](https://design.digital.go.jp/dads/)を参考に設計しています。本文と入力に16 CSS px以上、補助情報に14 CSS px以上を使い、主要な文字と背景のコントラスト比を4.5:1以上に設定しています。フォーカス位置も輪郭で示します。公式の部品をそのまま採用した製品ではありません。
+
+## 論文・研究計画書での引用
+
+本アプリを用いて標本数を計算した場合の参考文献例（APA第7版に準じたソフトウェアの表記）：
+
+> Horiike, R. (2026). *G-CHAM sample size studio* (Version 1.1) [Web application]. https://github.com/GISPHN/gcham-sample-size-studio
+
+本文中の表記例：`G-CHAM sample size studio（Horiike, 2026）を用いて標本数を計算した。` 使用した版は画面内の表示で確認し、再現性が必要な場合は利用日と[該当するソースのコミット](https://github.com/GISPHN/gcham-sample-size-studio/commit/3182d1264cea805061df25a9de06439aadd1156a)も記録してください。
+
+方法欄には、アプリ名だけでなく選択した計算法、入力値とその根拠、許容誤差・有意水準・検出力などの設定、必要解析人数と脱落率による補正を記載してください。計算法を論拠とする場合は、下表の対応する原著論文も引用してください。アプリの引用のみでは計算法や入力値の学術的根拠を示せません。雑誌の投稿規定が異なる場合は、その書式に合わせてください。
 
 ## 対応範囲と根拠
 
@@ -44,4 +54,4 @@ node --test tests/*.test.mjs
 
 原著に基づくR実装との代表値照合、数式の独立再計算、無効入力、境界値、群ごとの丸めを試験しています。`dist/calc.mjs` はUIから独立した純粋関数です。公開版では数値欄とスライダーを同期し、前提ごとの曲線、説明文、出典と計算結果を表示します。
 
-静的サイトとして `dist/` を公開できます。Sitesでは `.openai/hosting.json` が配信先を指定します。GitHub Actionsで計算試験とソースチェックを実行します。GitHub Pagesへ移す場合は別途Pagesの配信設定が必要です。
+`dist/` はGitHub Pagesへ公開する静的サイトです。`.github/workflows/pages.yml` はmainブランチ更新時に計算試験を行い、成功後に`dist/`をGitHub Pagesへデプロイします。初回のみリポジトリの「Settings → Pages → Build and deployment → Source」で「GitHub Actions」を選択してください。`.github/workflows/test.yml` はpushとpull requestの計算試験を実行します。

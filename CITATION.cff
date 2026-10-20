@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this application in your research, please cite it and the original paper for the selected calculation method."
+type: software
+title: "G-CHAM sample size studio"
+authors:
+  - family-names: Horiike
+    given-names: Ryo
+version: "1.1"
+date-released: 2026-10-20
+url: "https://gisphn.github.io/gcham-sample-size-studio/"
+repository-code: "https://github.com/GISPHN/gcham-sample-size-studio"
