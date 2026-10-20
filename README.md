@@ -10,9 +10,9 @@
 
 本アプリを用いて標本数を計算した場合の参考文献例（APA第7版に準じたソフトウェアの表記）：
 
-> Horiike, R. (2026). *G-CHAM sample size studio* (Version 1.1) [Web application]. https://github.com/GISPHN/gcham-sample-size-studio
+> Horiike, R. (2026). *G-CHAM sample size studio* (Version 1.1.1) [Web application]. https://github.com/GISPHN/gcham-sample-size-studio
 
-本文中の表記例：`G-CHAM sample size studio（Horiike, 2026）を用いて標本数を計算した。` 使用した版は画面内の表示で確認し、再現性が必要な場合は利用日と[該当するソースのコミット](https://github.com/GISPHN/gcham-sample-size-studio/commit/3182d1264cea805061df25a9de06439aadd1156a)も記録してください。
+本文中の表記例：`G-CHAM sample size studio（Horiike, 2026）を用いて標本数を計算した。` 使用した版は画面内の表示で確認し、再現性が必要な場合は利用日と[該当するソースのコミット](https://github.com/GISPHN/gcham-sample-size-studio/commits/main/)のSHAも記録してください。
 
 方法欄には、アプリ名だけでなく選択した計算法、入力値とその根拠、許容誤差・有意水準・検出力などの設定、必要解析人数と脱落率による補正を記載してください。計算法を論拠とする場合は、下表の対応する原著論文も引用してください。アプリの引用のみでは計算法や入力値の学術的根拠を示せません。雑誌の投稿規定が異なる場合は、その書式に合わせてください。
 

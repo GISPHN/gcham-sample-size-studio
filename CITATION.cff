@@ -5,7 +5,7 @@ title: "G-CHAM sample size studio"
 authors:
   - family-names: Horiike
     given-names: Ryo
-version: "1.1"
+version: "1.1.1"
 date-released: 2026-10-20
 url: "https://gisphn.github.io/gcham-sample-size-studio/"
 repository-code: "https://github.com/GISPHN/gcham-sample-size-studio"
