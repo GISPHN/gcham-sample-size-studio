@@ -2,7 +2,7 @@
 
 研究目的から選ぶ、日本語のサンプルサイズ設計アプリ。`dist/index.html` を静的サイトとして配信します。入力した研究情報はブラウザー内で計算され、サーバーへ送信されません。JSON保存は利用者の端末へのダウンロードです。
 
-公開アプリ（GitHub Pages）: https://gisphn.github.io/gcham-sample-size-studio/
+GitHub Pages公開URL（初回設定後に有効）: https://gisphn.github.io/gcham-sample-size-studio/
 
 文字の大きさと色は[デジタル庁デザインシステム](https://design.digital.go.jp/dads/)を参考に設計しています。本文と入力に16 CSS px以上、補助情報に14 CSS px以上を使い、主要な文字と背景のコントラスト比を4.5:1以上に設定しています。フォーカス位置も輪郭で示します。公式の部品をそのまま採用した製品ではありません。
 
